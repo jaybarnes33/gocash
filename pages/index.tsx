@@ -108,7 +108,9 @@ export default function Home() {
               className="d-flex align-items-center justify-content-center pt-5 text-light"
             >
               <div>
-                <h2 className="mb-4">Coming to the app stores</h2>
+                <h2 className="mb-4 font-weight-bold">
+                  Coming to the app stores
+                </h2>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
                   target="_blank"
