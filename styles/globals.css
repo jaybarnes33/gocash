@@ -5,6 +5,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+body {
+}
 
 a {
   color: inherit;
@@ -14,13 +16,38 @@ a {
 * {
   box-sizing: border-box;
 }
+.primary-button {
+  background: linear-gradient(95.33deg, #b977ff -11.97%, #60269e 105%);
+  border-radius: 50px;
+  padding: 0.7rem 1rem;
+  border-color: #60269e;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.primary-button:hover {
+  transform: scale(1.1);
+  border-color: #60269e;
+}
+.light-button {
+  background: white !important;
+  color: black !important;
+  border: none !important;
+  border-radius: 50px;
+  padding: 0.7rem 1rem;
+
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+
+.light-button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: black !important;
 }
