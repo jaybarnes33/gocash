@@ -5,9 +5,7 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect fixed="top">
       <Container>
-        <Navbar.Brand href="/" className="bold">
-          GoCash
-        </Navbar.Brand>
+        <Navbar.Brand href="/">GoCash</Navbar.Brand>
       </Container>
     </Navbar>
   );
