@@ -79,3 +79,7 @@ bold,
   font-size: 1.2rem;
   color: black !important;
 }
+
+.member:nth-child(even) {
+  transform: translateY(-10%);
+}

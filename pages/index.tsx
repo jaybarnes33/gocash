@@ -3,8 +3,38 @@ import { Image } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 
 import { Row, Col, Button, Container } from "react-bootstrap";
-import { useEffect } from "react";
-import aos from "aos";
+const team = [
+  {
+    name: "Joseph Agere",
+    school: "",
+    image: "/joseph.png",
+    role: "Artificial Intelligence Researcher",
+  },
+  {
+    name: "Fiifi Amoah",
+    school: "UMaT",
+    image: "/fiifi.png",
+    role: "Blockchain Researcher",
+  },
+  {
+    name: "Daisy Mensah",
+    school: "UMaT",
+    image: "/daisy.png",
+    role: "Security Analyst",
+  },
+  {
+    name: "Dela Eyram Kuwornu",
+    school: "UMaT",
+    image: "/dela.png",
+    role: "AI Engineer",
+  },
+  {
+    name: "John Barnes Oduro Twumasi",
+    school: "UMaT",
+    image: "/barnes.png",
+    role: "Fullstack Engineer",
+  },
+];
 export default function Home() {
   return (
     <div>
@@ -364,6 +394,29 @@ export default function Home() {
                 />
               </div>
             </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className={styles.team}>
+        <h1 className="text-center">Our Team</h1>
+        <Container>
+          <Row>
+            {team.map((member) => (
+              <Col xs={6} md={4} key={member.name}>
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width="100%"
+                  className="member"
+                />
+                <div className="text-center">
+                  <strong>{member.name}</strong>, &nbsp;
+                  <strong>{member.role}</strong>
+                  <br />
+                  <em>{member.school}</em>
+                </div>
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>
