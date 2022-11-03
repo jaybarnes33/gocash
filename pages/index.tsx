@@ -134,7 +134,7 @@ export default function Home() {
                 src="/mockup.png"
                 alt="mockup"
                 className={styles.mainImg}
-                style={{ objectFit: "contain", transform: "rotate(25deg)" }}
+                style={{ objectFit: "contain", transform: "rotate(-25deg)" }}
               />
             </Col>
           </Row>
