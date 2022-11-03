@@ -20,152 +20,6 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        <svg
-          className="position-absolute"
-          style={{ left: "2rem", bottom: "1rem" }}
-          width="29"
-          height="29"
-          viewBox="0 0 29 29"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="14.6168"
-            cy="14.7334"
-            r="14"
-            fill="url(#paint0_linear_115_36)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_115_36"
-              x1="3.72793"
-              y1="3.23717"
-              x2="25.1045"
-              y2="27.6712"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#E4C5FD" />
-              <stop offset="1" stop-color="#BB29EE" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-        <svg
-          className="position-absolute"
-          style={{ right: "3rem", top: "10rem" }}
-          width="29"
-          height="29"
-          viewBox="0 0 29 29"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="14.6168"
-            cy="14.7334"
-            r="14"
-            fill="url(#paint0_linear_115_36)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_115_36"
-              x1="3.72793"
-              y1="3.23717"
-              x2="25.1045"
-              y2="27.6712"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#E4C5FD" />
-              <stop offset="1" stop-color="#BB29EE" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <svg
-          className="position-absolute"
-          style={{ right: "40%", bottom: "15%" }}
-          width="31"
-          height="31"
-          viewBox="0 0 31 31"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="15.6167"
-            cy="15.7334"
-            r="15"
-            fill="url(#paint0_linear_115_39)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_115_39"
-              x1="3.1167"
-              y1="2.58267"
-              x2="26.8093"
-              y2="29.6639"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#FBBE9C" />
-              <stop offset="1" stop-color="#EC8220" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-        <svg
-          className="position-absolute"
-          style={{ right: "20%", top: "15%" }}
-          width="51"
-          height="51"
-          viewBox="0 0 51 51"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M25.6168 0.733398L32.3691 18.9811L50.6168 25.7334L32.3691 32.4857L25.6168 50.7334L18.8646 32.4857L0.616821 25.7334L18.8646 18.9811L25.6168 0.733398Z"
-            fill="url(#paint0_linear_115_38)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_115_38"
-              x1="8.95015"
-              y1="4.90007"
-              x2="42.2835"
-              y2="46.5667"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#E5C5FF" />
-              <stop offset="1" stop-color="#A532FF" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-        <svg
-          className="position-absolute"
-          style={{ right: "2rem", bottom: "10rem" }}
-          width="29"
-          height="29"
-          viewBox="0 0 29 29"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="14.6168"
-            cy="14.7334"
-            r="14"
-            fill="url(#paint0_linear_115_36)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_115_36"
-              x1="3.72793"
-              y1="3.23717"
-              x2="25.1045"
-              y2="27.6712"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#E4C5FD" />
-              <stop offset="1" stop-color="#BB29EE" />
-            </linearGradient>
-          </defs>
-        </svg>
         <Container>
           <Row>
             <Col md={6} className="d-flex align-items-center">
@@ -207,9 +61,7 @@ export default function Home() {
             </Col>
             <Col
               md={6}
-              className="d-flex align-items-center  justify-content-center pt-5"
-              data-aos="fade-left"
-              data-aos-duration={1000}
+              className="d-flex align-items-center  justify-content-center pt-5 no-scroll"
             >
               <Image
                 src="/mockup.png"
@@ -224,25 +76,35 @@ export default function Home() {
       <section className="d-flex align-items-center py-5">
         <Container>
           <Row className="text-center pt-5">
-            <Col md={4} data-aos="fade-right" data-aos-duration={1000}>
+            <Col md={4}>
               <div>
-                <h3>Virtual Cards</h3>
-                <p>
+                <h3 data-aos="fade-right" data-aos-duration={1000}>
+                  Virtual Cards
+                </h3>
+                <p data-aos="fade-left" data-aos-duration={1000}>
                   Use our virtual cards to handle subscriptions, make online
                   purchases
                 </p>
               </div>
             </Col>
-            <Col md={4} data-aos="fade-up" data-aos-duration={1000}>
+            <Col md={4}>
               <div>
-                <h3>Pay bills</h3>
-                <p>Hate queuing? Pay your bills from the app.</p>
+                <h3 data-aos="fade-right" data-aos-duration={1000}>
+                  Pay bills
+                </h3>
+                <p data-aos="fade-left" data-aos-duration={1000}>
+                  Hate queuing? Pay your bills from the app.
+                </p>
               </div>
             </Col>
-            <Col md={4} data-aos="fade-left" data-aos-duration={1000}>
+            <Col md={4}>
               <div>
-                <h3>Send Money</h3>
-                <p>Send money to your acquaintances anywhere in the world</p>
+                <h3 data-aos="fade-left" data-aos-duration={1000}>
+                  Send Money
+                </h3>
+                <p data-aos="fade-right" data-aos-duration={1000}>
+                  Send money to your acquaintances anywhere in the world
+                </p>
               </div>
             </Col>
           </Row>
@@ -251,11 +113,13 @@ export default function Home() {
       <section className="d-flex align-items-center pb-5">
         <Container>
           <Row className="text-center">
-            <Col md={6} data-aos="fade-right" data-aos-duration={1000}>
+            <Col md={6} className="no-scroll">
               <Image
                 src="/card.png"
                 alt="mockup"
-                height={350}
+                data-aos="fade-right"
+                data-aos-duration={1000}
+                className={styles.mainImg}
                 style={{ objectFit: "contain", transform: "rotate(25deg)" }}
               />
             </Col>
@@ -263,8 +127,14 @@ export default function Home() {
               md={6}
               className="d-flex align-items-center justify-content-center pt-5"
             >
-              <div data-aos="fade-up" data-aos-duration={1000}>
-                <h2 className="mb-4">Get notified when we launch.</h2>
+              <div>
+                <h2
+                  data-aos="fade-up"
+                  data-aos-duration={1000}
+                  className="mb-4"
+                >
+                  Get notified when we launch.
+                </h2>
                 <div className="d-flex justify-content-center gap-3">
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
@@ -295,12 +165,10 @@ export default function Home() {
         <Container>
           <Row className="text-center">
             <Col
-              data-aos="fade-left"
-              data-aos-duration={1000}
               md={6}
               className="d-flex align-items-center justify-content-center pt-5 text-light"
             >
-              <div>
+              <div data-aos="fade-left" data-aos-duration={1000}>
                 <h2 className="mb-4 font-weight-bold">
                   Coming to the app stores
                 </h2>
@@ -324,24 +192,26 @@ export default function Home() {
             </Col>
             <Col
               md={6}
+              className="mt-4 position-relative "
               data-aos="fade-right"
               data-aos-duration={1000}
-              className="mt-4 position-relative d-flex  align-items-center justify-content-center"
             >
-              <Image
-                src="/mockup.png"
-                alt="mockup"
-                height={350}
-                style={{ objectFit: "contain" }}
-              />
-              <Image
-                src="/card.png"
-                alt="mockup"
-                height={200}
-                style={{
-                  objectFit: "contain",
-                }}
-              />
+              <div className="d-flex  align-items-center justify-content-center">
+                <Image
+                  src="/mockup.png"
+                  alt="mockup"
+                  height={350}
+                  style={{ objectFit: "contain" }}
+                />
+                <Image
+                  src="/card.png"
+                  alt="mockup"
+                  height={200}
+                  style={{
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
             </Col>
           </Row>
         </Container>

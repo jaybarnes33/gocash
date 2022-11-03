@@ -1,14 +1,19 @@
 @import "@fontsource/roboto";
 @import "@fontsource/roboto/900.css";
+* {
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: #efe3fd;
-
-  font-family: Roboto, sans-serif;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;
