@@ -181,19 +181,28 @@ export default function Home() {
                 >
                   Send money, pay bills, handle subscriptions all in one app.
                 </p>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
-                  target="_blank"
-                  rel="noreferrer noopener"
+                <div
+                  className="d-flex justify-content-start gap-3"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
                 >
-                  <Button
-                    data-aos="fade-left"
-                    data-aos-duration={1000}
-                    className="primary-button"
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
-                    Join our Waitlist
-                  </Button>
-                </a>
+                    <Button className="primary-button">
+                      Join our Waitlist
+                    </Button>
+                  </a>
+                  <a
+                    href="https://expo.dev/@dishplug/vertex?serviceType=classic&distribution=expo-go"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <Button className="light-button">Take a sneakpeak</Button>
+                  </a>
+                </div>
               </div>
             </Col>
             <Col
@@ -256,13 +265,24 @@ export default function Home() {
             >
               <div data-aos="fade-up" data-aos-duration={1000}>
                 <h2 className="mb-4">Get notified when we launch.</h2>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <Button className="primary-button">Join our Waitlist</Button>
-                </a>
+                <div className="d-flex justify-content-center gap-3">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <Button className="primary-button">
+                      Join our Waitlist
+                    </Button>
+                  </a>
+                  <a
+                    href="https://expo.dev/@dishplug/vertex?serviceType=classic&distribution=expo-go"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <Button className="light-button">Take a sneakpeak</Button>
+                  </a>
+                </div>
               </div>
             </Col>
           </Row>
@@ -284,13 +304,22 @@ export default function Home() {
                 <h2 className="mb-4 font-weight-bold">
                   Coming to the app stores
                 </h2>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <Button className="light-button">Join our Waitlist</Button>
-                </a>
+                <div className="d-flex justify-content-center gap-3">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <Button className="light-button">Join our Waitlist</Button>
+                  </a>
+                  <a
+                    href="https://expo.dev/@dishplug/vertex?serviceType=classic&distribution=expo-go"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <Button className="primary-button">Take a sneakpeak</Button>
+                  </a>
+                </div>
               </div>
             </Col>
             <Col
