@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { Image } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
-import cashout from "../public/cashout.png";
-import mockup from "../public/mockup.png";
+
 import { Row, Col, Button, Container } from "react-bootstrap";
+import { useEffect } from "react";
+import aos from "aos";
 export default function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ export default function Home() {
         <title>GoCash</title>
         <meta name="description" content="Transactions made easy." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
       <section
         className={`d-flex position-relative align-items-center ${styles.main}`}
@@ -168,11 +170,15 @@ export default function Home() {
           <Row>
             <Col md={6} className="d-flex align-items-center">
               <div className={styles.maintext}>
-                <h1>
+                <h1 data-aos="fade-right" data-aos-duration={1000}>
                   Transactions made easy with
                   <span className={styles.text}>&nbsp;GoCash</span>
                 </h1>
-                <p className="mb-4">
+                <p
+                  className="mb-4"
+                  data-aos="flip-left"
+                  data-aos-duration={1000}
+                >
                   Send money, pay bills, handle subscriptions all in one app.
                 </p>
                 <a
@@ -180,13 +186,21 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <Button className="primary-button">Join our Waitlist</Button>
+                  <Button
+                    data-aos="fade-left"
+                    data-aos-duration={1000}
+                    className="primary-button"
+                  >
+                    Join our Waitlist
+                  </Button>
                 </a>
               </div>
             </Col>
             <Col
               md={6}
               className="d-flex align-items-center  justify-content-center pt-5"
+              data-aos="fade-left"
+              data-aos-duration={1000}
             >
               <Image
                 src="/mockup.png"
@@ -201,7 +215,7 @@ export default function Home() {
       <section className="d-flex align-items-center py-5">
         <Container>
           <Row className="text-center pt-5">
-            <Col md={4}>
+            <Col md={4} data-aos="fade-right" data-aos-duration={1000}>
               <div>
                 <h3>Virtual Cards</h3>
                 <p>
@@ -210,13 +224,13 @@ export default function Home() {
                 </p>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} data-aos="fade-up" data-aos-duration={1000}>
               <div>
                 <h3>Pay bills</h3>
                 <p>Hate queuing? Pay your bills from the app.</p>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} data-aos="fade-left" data-aos-duration={1000}>
               <div>
                 <h3>Send Money</h3>
                 <p>Send money to your acquaintances anywhere in the world</p>
@@ -228,7 +242,7 @@ export default function Home() {
       <section className="d-flex align-items-center pb-5">
         <Container>
           <Row className="text-center">
-            <Col md={6}>
+            <Col md={6} data-aos="fade-right" data-aos-duration={1000}>
               <Image
                 src="/card.png"
                 alt="mockup"
@@ -240,7 +254,7 @@ export default function Home() {
               md={6}
               className="d-flex align-items-center justify-content-center pt-5"
             >
-              <div>
+              <div data-aos="fade-up" data-aos-duration={1000}>
                 <h2 className="mb-4">Get notified when we launch.</h2>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
@@ -261,6 +275,8 @@ export default function Home() {
         <Container>
           <Row className="text-center">
             <Col
+              data-aos="fade-left"
+              data-aos-duration={1000}
               md={6}
               className="d-flex align-items-center justify-content-center pt-5 text-light"
             >
@@ -279,6 +295,8 @@ export default function Home() {
             </Col>
             <Col
               md={6}
+              data-aos="fade-right"
+              data-aos-duration={1000}
               className="mt-4 position-relative d-flex  align-items-center justify-content-center"
             >
               <Image
