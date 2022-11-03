@@ -172,7 +172,10 @@ export default function Home() {
                 <h2 className="mb-4 font-weight-bold">
                   Coming to the app stores
                 </h2>
-                <div className="d-flex justify-content-center gap-3">
+                <div
+                  className="d-flex justify-content-center gap-3 position-relative"
+                  style={{ zIndex: 4 }}
+                >
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
                     target="_blank"
