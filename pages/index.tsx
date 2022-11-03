@@ -142,7 +142,7 @@ export default function Home() {
       </section>
       <section className="d-flex align-items-center py-5">
         <Container>
-          <Row className="text-center py-5">
+          <Row className="text-center pt-5">
             <Col md={4}>
               <div>
                 <h3>Virtual Cards</h3>
@@ -167,7 +167,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section className="d-flex align-items-center py-5">
+      <section className="d-flex align-items-center pb-5">
         <Container>
           <Row className="text-center">
             <Col md={6}>
