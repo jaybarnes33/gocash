@@ -400,23 +400,24 @@ export default function Home() {
       <section className={styles.team}>
         <h1 className="text-center">Our Team</h1>
         <Container>
-          <Row>
-            {team.map((member) => (
-              <Col xs={6} md={4} key={member.name}>
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width="100%"
-                  className="member"
-                />
-                <div className="text-center">
-                  <strong>{member.name}</strong>, &nbsp;
-                  <strong>{member.role}</strong>
-                  <br />
-                  <em>{member.school}</em>
-                </div>
-              </Col>
-            ))}
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col md={6}>
+              <p>
+                Team vertex consists of <small>(From left to right)</small>
+                <ul>
+                  <li>Joseph Agere</li>
+                  <li>Daisy Mensah</li>
+                  <li>Fiifi Amoah</li>
+                  <li>Dela Eyram Kuwornu</li>
+                  <li>
+                    John Barnes Oduro Twumasi <small>Not in this picture</small>
+                  </li>
+                </ul>
+              </p>
+            </Col>
+            <Col md={6}>
+              <Image src="/team.jpeg" alt="team-vertex" fluid />
+            </Col>
           </Row>
         </Container>
       </section>
