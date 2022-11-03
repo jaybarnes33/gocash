@@ -184,7 +184,7 @@ export default function Home() {
                 <div
                   className="d-flex justify-content-start gap-3"
                   data-aos="fade-left"
-                  data-aos-duration="1000"
+                  data-aos-duration={1000}
                 >
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
@@ -223,34 +223,36 @@ export default function Home() {
         <Container>
           <Row className="text-center pt-5">
             <Col md={4}>
-              <div>
-                <h3 data-aos="fade-right" data-aos-duration={1000}>
-                  Virtual Cards
-                </h3>
-                <p data-aos="fade-left" data-aos-duration={1000}>
+              <div
+                data-aos="fade-right"
+                data-aos-duration={1000}
+                data-aos-delay={1000}
+              >
+                <h3>Virtual Cards</h3>
+                <p>
                   Use our virtual cards to handle subscriptions, make online
                   purchases
                 </p>
               </div>
             </Col>
             <Col md={4}>
-              <div>
-                <h3 data-aos="fade-right" data-aos-duration={1000}>
-                  Pay bills
-                </h3>
-                <p data-aos="fade-left" data-aos-duration={1000}>
-                  Hate queuing? Pay your bills from the app.
-                </p>
+              <div
+                data-aos="fade-left"
+                data-aos-duration={1000}
+                data-aos-delay={2000}
+              >
+                <h3>Pay bills</h3>
+                <p>Hate queuing? Pay your bills from the app.</p>
               </div>
             </Col>
             <Col md={4}>
-              <div>
-                <h3 data-aos="fade-left" data-aos-duration={1000}>
-                  Send Money
-                </h3>
-                <p data-aos="fade-right" data-aos-duration={1000}>
-                  Send money to your acquaintances anywhere in the world
-                </p>
+              <div
+                data-aos="fade-right"
+                data-aos-duration={1000}
+                data-aos-delay={3000}
+              >
+                <h3>Send Money</h3>
+                <p>Send money to your acquaintances anywhere in the world</p>
               </div>
             </Col>
           </Row>
