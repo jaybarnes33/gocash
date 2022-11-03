@@ -13,18 +13,109 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section
-        className={`d-flex align-items-center ${styles.main}`}
+        className={`d-flex position-relative align-items-center ${styles.main}`}
         style={{
           minHeight: "100vh",
         }}
       >
+        <svg
+          className="position-absolute"
+          style={{ left: "2rem", bottom: "1rem" }}
+          width="29"
+          height="29"
+          viewBox="0 0 29 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="14.6168"
+            cy="14.7334"
+            r="14"
+            fill="url(#paint0_linear_115_36)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_115_36"
+              x1="3.72793"
+              y1="3.23717"
+              x2="25.1045"
+              y2="27.6712"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#E4C5FD" />
+              <stop offset="1" stop-color="#BB29EE" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <svg
+          className="position-absolute"
+          style={{ right: "3rem", top: "10rem" }}
+          width="29"
+          height="29"
+          viewBox="0 0 29 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="14.6168"
+            cy="14.7334"
+            r="14"
+            fill="url(#paint0_linear_115_36)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_115_36"
+              x1="3.72793"
+              y1="3.23717"
+              x2="25.1045"
+              y2="27.6712"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#E4C5FD" />
+              <stop offset="1" stop-color="#BB29EE" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          className="position-absolute"
+          style={{ right: "2rem", bottom: "10rem" }}
+          width="29"
+          height="29"
+          viewBox="0 0 29 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="14.6168"
+            cy="14.7334"
+            r="14"
+            fill="url(#paint0_linear_115_36)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_115_36"
+              x1="3.72793"
+              y1="3.23717"
+              x2="25.1045"
+              y2="27.6712"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#E4C5FD" />
+              <stop offset="1" stop-color="#BB29EE" />
+            </linearGradient>
+          </defs>
+        </svg>
         <Container>
           <Row>
             <Col md={6} className="d-flex align-items-center">
-              <div>
-                <h1>Make transactions with ease</h1>
+              <div className={styles.maintext}>
+                <h1>
+                  Transactions made easy with
+                  <span className={styles.text}>&nbsp;GoCash</span>
+                </h1>
                 <p className="mb-4">
-                  Send money, pay bills, handle subscriptions all in one app
+                  Send money, pay bills, handle subscriptions all in one app.
                 </p>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc1af3Ptztn_SohZVoEeMx94kvA0N0ASyCVmNigz8GWJZrofQ/viewform"
@@ -35,15 +126,23 @@ export default function Home() {
                 </a>
               </div>
             </Col>
-            <Col md={6} className="d-flex align-items-center pt-5">
-              <Image src={"/cashout.png"} alt="Vector image" fluid />
+            <Col
+              md={6}
+              className="d-flex align-items-center  justify-content-center pt-5"
+            >
+              <Image
+                src="/mockup.png"
+                alt="mockup"
+                className={styles.mainImg}
+                style={{ objectFit: "contain", transform: "rotate(25deg)" }}
+              />
             </Col>
           </Row>
         </Container>
       </section>
       <section className="d-flex align-items-center py-5">
         <Container>
-          <Row className="text-center">
+          <Row className="text-center py-5">
             <Col md={4}>
               <div>
                 <h3>Virtual Cards</h3>
@@ -76,7 +175,7 @@ export default function Home() {
                 src="/mockup.png"
                 alt="mockup"
                 height={350}
-                style={{ objectFit: "contain" }}
+                style={{ objectFit: "contain", transform: "rotate(25deg)" }}
               />
             </Col>
             <Col
@@ -125,7 +224,7 @@ export default function Home() {
                 src="/mockup.png"
                 alt="mockup"
                 height={350}
-                style={{ objectFit: "contain" }}
+                style={{ objectFit: "contain", transform: "rotate(-25deg)" }}
               />
             </Col>
           </Row>

@@ -2,7 +2,43 @@
   background-color: #60269e;
 }
 
+.main {
+  background-image: url("../public/Rectangle.png");
+}
+
+.mainImg {
+  width: 300px;
+}
+
+.maintext h1 {
+  font-size: 4rem;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 5rem 0;
+  }
+  .maintext h1 {
+    font-size: 3rem;
+  }
+
+  .mainImg {
+    width: 230px;
+    transform: rotate(-10deg) !important;
+  }
+}
 .light {
   position: absolute;
   top: 0;
+}
+
+.text {
+  background: linear-gradient(
+    97.54deg,
+    #60269e 1.96%,
+    #03cffc 36.81%,
+    #b977ff 77.81%,
+    #6508c9 100.36%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
